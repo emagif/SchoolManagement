@@ -4,29 +4,20 @@
 #include <malloc.h>
 
 
-
 typedef struct student {
-    char name[10];
-    int id; 
-}Student;
-
+    char name[20];
+    unsigned int id;
+} Student;
 
 typedef struct course {
-    char course_name[10];
-    double average_grade;
-    Student* enrolled_students;
-}Course;
-
+    char name[20];
+    double averageGrade;
+    unsigned int totalStudents;
+    Student *studentArray;
+} Course;
 
 typedef struct school {
-    Course* courses;
-    char school_name[20];
-}School;
-
-
-void create_student(Student* array) {
-    int i; 
-    for(i = 0; i < sizeof(array)/sizeof(Student); i++) {
-        
-    }
-}
+    char name[20];
+    unsigned int totalCourses;
+    Course *courseArray;
+} School;
