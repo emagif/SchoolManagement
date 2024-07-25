@@ -21,3 +21,22 @@ typedef struct school {
     unsigned int totalCourses;
     Course *courseArray;
 } School;
+
+
+Student* createStudent() {
+    Student* newStudent = (Student*)malloc(sizeof(Student));
+
+    printf("Enter student name: \n");
+    scanf("%s", (*newStudent).name);
+
+    printf("Enter student ID: \n");
+    scanf("%u", (*newStudent).id);
+
+    return newStudent;
+}
+
+
+
+int main() {
+
+}
